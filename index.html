@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-c"></i>
+                    <div class="logo-text">Céline Inthaaphay</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="https://loremflickr.com/320/240?random=1" alt="Profile picture">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm a <span class="input">Web Developer </span></h5>
+                    <h1>Céline Inthaaphay</h1>""
+                    <p>I am 26 years old. I have a bachelor degree in foreign languages (English and Chinese) specialized in business and marketing. 
+                    I decided to do a profesional transition to go after my ideal job. I am currently preparing a professional certification in computer science at Metz Numeric School, in Metz, France. 
+                    My studies focus in the learning of computer programming, project management, and information technology. These studies are preparing me to work in the computing technology and digital fields. I aim to be a full-stack developer. 
+                    Nice to meet you !
+                    </p>
+
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download CV</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"> <i class="fa-brands fa-github"></i></a>
+                        <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Typed JS for text-effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+
+    <script>
+        /* Creating button click show hide bar */
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links = document.querySelector(".navlinks li");
+        
+        togglebtn.addEventListener("click", function() {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed = new Typed(".input", {
+            strings:["Web Developer", "Frontend Developer", "Fullstack Developer"],
+            typedSpeed: 70,
+            backSpeed: 55,
+            loop: true,
+        })
+    </script>
+</body>
+</html>
