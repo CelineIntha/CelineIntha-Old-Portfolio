@@ -8,7 +8,9 @@
 
 body {
     overflow-x: hidden;
+    background-color: #FAA0A0;
 }
+
 p {
     text-align: justify;
     margin-top: 10px;
@@ -123,7 +125,7 @@ nav .navlinks li a {
 }
 
 .hero-pic img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .hero-text {
@@ -184,9 +186,173 @@ nav .navlinks li a {
     transform: rotate(360deg);
 }
 
+/*/____________________________ Timeline CSS ____________________________*/
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #222;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container1 {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container1::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #222;
+  border: 4px solid rgb(82, 82, 82);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid rgb(4, 3, 3);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent rgb(3, 3, 3);
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid rgb(8, 7, 7);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent rgb(8, 6, 6) transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: #222;
+  color: #fff;
+  position: relative;
+  border-radius: 6px;
+}
+
+/*_______________ Bouncing arrow ________________*/
+
+.fa-chevron-down:before {
+    color: #FAA0A0;
+    cursor: pointer;
+}
+
+/* Scroll down indicator (bouncing) */
+
+@-webkit-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      --webkit-transform: translateY(0);
+      transform: translateX(0);
+    }
+    40% {
+      --webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      --webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  
+  @-moz-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -ms-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -ms-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  
+  .bounce {
+    --webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }
+
 /* Responsive & displaying navbar for small screen */
 
-@media(max-width: 930px) {
+@media only screen and (max-width: 600px) {
     nav .togglebtn {
         display: initial;
     }
@@ -233,9 +399,22 @@ nav .navlinks li a {
     nav .navlinks.open {
         right: 0;
     }
+    .container {
+        flex-direction: column;
+        padding-top: 2rem; 
+    }
+    .hero-text {
+        padding: 40px 0px;
+    }
+    .button {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
 }
 
-@media(max-width: 768px) {
+/*
+@media only screen and (max-width: 600px) {
     .container {
         flex-direction: column;
         padding-top: 2rem; 
@@ -244,4 +423,44 @@ nav .navlinks li a {
         padding: 40px 0px;
     }
 
+}
+*/
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    .hero-pic img:hover {
+        transform: none;
+    }
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .container1 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .container1::before {
+    left: 60px;
+    border: medium solid #222;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #222 transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
 }
