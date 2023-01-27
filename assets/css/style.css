@@ -289,6 +289,12 @@ nav .navlinks li a {
     cursor: pointer;
 }
 
+.button {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
 /* Scroll down indicator (bouncing) */
 
 @-webkit-keyframes bounce {
