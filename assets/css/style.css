@@ -103,6 +103,21 @@ nav .navlinks li a {
     margin-right: 2.5rem;
 }
 
+.navlinks > li > a:hover {
+  color: #FAA0A0;
+}
+
+.hero-text .btn-group .btn {
+  color:#e5e5e5;
+  transition: 0.5;
+}
+
+.hero-text .btn-group .btn:hover {
+  border: 2px solid #FAA0A0;
+  color: #FAA0A0;
+  transform: scale(1.2);
+}
+
 .container {
     display: flex;
     justify-content: space-around;
