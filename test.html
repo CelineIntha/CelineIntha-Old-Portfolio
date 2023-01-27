@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-width: 800px)" href="wide.css" />
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/button.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,8 +29,8 @@
                     </div>
                     <ul class="navlinks">
                     <li><a href="#">Home</a></li>
+                    <li><a href="#SectionName">Resume</a></li>
                     <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Resume</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact</a></li>
                     </ul>
@@ -59,50 +61,58 @@
                         <a href="https://github.com/CelineIntha"> <i class="fa-brands fa-github"></i></a>
                         <a href="https://twitter.com/Minriz_i"> <i class="fa-brands fa-twitter"></i></a>
                     </div>
-                    <div class="button">
-                <i onclick= "ShowAndHide()"id="moveDown" class="fa fa-chevron-down fa-3x bounce"></i>
-                    </div>
                 </div>
             </div>
         </div>
+        <div class="button">
+          <i onclick= "ShowAndHide()"id="moveDown" class="fa fa-chevron-down fa-3x bounce"></i>
+          </div>
     </div>
 
-<!-- Timeline-->
-
-<div class="timeline" id="SectionName" style="display:none">
-    <div class="container1 right">
-      <div class="content">
-        <h2>2022</h2>
-        <p>Web Developer Professional Certification</p>
-      </div>
-    </div>
-    <div class="container1 left">
-      <div class="content">
-        <h2>2021</h2>
-        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-      </div>
-    </div>
-    <div class="container1 right">
-      <div class="content">
-        <h2>2019</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sunt voluptates fuga. Neque inventore odio temporibus amet molestiae, praesentium unde, veritatis illum hic, aperiam aut porro enim fugiat ut ipsum.</p>
-      </div>
-    </div>
-    <div class="container1 left">
-      <div class="content">
-        <h2>2018</h2>
-        <p>Licence - Université de Lorraine</p>
-      </div>
-    </div>
-    <div class="container1 right">
-      <div class="content">
-        <h2>2014</h2>
-        <p>Baccalauréat Littéraire</p>
-      </div>
-    </div>
+<!--Switch Button-->    
+<div class="form-box" id="SectionName" style="display:none">
+  <div class="bouton-box">
+    <div id="bouton"></div>
+    <button type="button" class="toggle-bouton" onclick="leftClick()">Expériences Professionnelles</button>
+    <button type="button" class="toggle-bouton" onclick="rightClick()">Formation</button>
   </div>
 
-    
+
+  <!-- Timeline idéalment faire comme : https://alex-templateclue.blogspot.com/-->
+<div class="timeline">
+  <div class="container1 right">
+    <div class="content">
+      <h2>2022</h2>
+      <p>Web Developer Professional Certification</p>
+    </div>
+  </div>
+  <div class="container1 left">
+    <div class="content">
+      <h2>2021</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+  <div class="container1 right">
+    <div class="content">
+      <h2>2019</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sunt voluptates fuga. Neque inventore odio temporibus amet molestiae, praesentium unde, veritatis illum hic, aperiam aut porro enim fugiat ut ipsum.</p>
+    </div>
+  </div>
+  <div class="container1 left">
+    <div class="content">
+      <h2>2018</h2>
+      <p>Licence - Université de Lorraine</p>
+    </div>
+  </div>
+  <div class="container1 right">
+    <div class="content">
+      <h2>2014</h2>
+      <p>Baccalauréat Littéraire</p>
+    </div>
+  </div>
+</div>
+</div>
+
 
     <!-- Typed JS for text-effect -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>

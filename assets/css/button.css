@@ -1,0 +1,46 @@
+@import url('wide.css') screen and (min-width: 800px);
+
+.bouton-box {
+    width: 50%;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 30px;
+    background-color: #222;
+}
+
+.toggle-bouton {
+    padding: 10px 80px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #e5e5e5;
+} 
+
+#bouton {
+    left: 0;
+    right: 0;
+    position: absolute; 
+    width: 50%;
+    height: 100%;
+    background: #9e4a4a;
+    border-radius: 30px;
+    transition: .5s; 
+}
+
+@media only screen and (max-width: 600px) {
+    .bouton-box {
+        width: 90%;
+    }
+    .toggle-bouton {
+        padding: 10px 10px;
+    }
+
+    #bouton {
+        width: 50%;
+    }
+}
