@@ -1,6 +1,7 @@
+// Faire réapparaître la timeline education lors du click
+let timelineEducation = document.getElementById('timeline-education');
 
 // Pour les 2 boutons
-
 var btn = document.getElementById('bouton')
 
 function leftClick() {
@@ -9,6 +10,7 @@ function leftClick() {
 
 function rightClick() {
     btn.style.left = '50%'
+    timelineEducation.removeAttribute("hidden");
 }
 
 document.getElementById("right-button")
@@ -22,4 +24,3 @@ document.getElementById("left-button")
   document.getElementById("timeline-education").hidden = true;
   document.getElementById("timeline-career").hidden = false;
 }, false);
-
