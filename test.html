@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="screen and (min-width: 800px)" href="wide.css" />
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/button.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -29,7 +28,7 @@
                     </div>
                     <ul class="navlinks">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#SectionName">Resume</a></li>
+                    <li><a href="#boutonbox">Resume</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact</a></li>
@@ -65,21 +64,20 @@
             </div>
         </div>
         <div class="button">
-          <i onclick= "ShowAndHide()"id="moveDown" class="fa fa-chevron-down fa-3x bounce"></i>
+          <a href="#boutonbox"><i class="fa fa-chevron-down fa-3x bounce"></i></a>
           </div>
     </div>
 
 <!--Switch Button-->    
-<div class="form-box" id="SectionName" style="display:none">
+<div class="form-box" id="boutonbox">
   <div class="bouton-box">
     <div id="bouton"></div>
-    <button type="button" class="toggle-bouton" onclick="leftClick()">Carrière</button>
-    <button type="button" class="toggle-bouton" onclick="rightClick()">Formation</button>
+    <button type="button" class="toggle-bouton" id="left-button" onclick="leftClick();">Career</button>
+    <button type="button" class="toggle-bouton" id="right-button" onclick="rightClick()">Education</button>
   </div>
 
-
-  <!-- Timeline idéalment faire comme : https://alex-templateclue.blogspot.com/-->
-<div class="timeline">
+<!-- Timeline for the career-->
+<div class="timeline" id="timeline-career">
   <div class="container1 right">
     <div class="content">
       <h2>2022</h2>
@@ -112,6 +110,41 @@
   </div>
 </div>
 </div>
+
+<!-- Timeline for the education-->
+  <div class="timeline" id="timeline-education">
+    <div class="container1 right">
+      <div class="content">
+        <h2>12</h2>
+        <p>Saluuuut</p>
+      </div>
+    </div>
+    <div class="container1 left">
+      <div class="content">
+        <h2>34</h2>
+        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+      </div>
+    </div>
+    <div class="container1 right">
+      <div class="content">
+        <h2>56</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sunt voluptates fuga. Neque inventore odio temporibus amet molestiae, praesentium unde, veritatis illum hic, aperiam aut porro enim fugiat ut ipsum.</p>
+      </div>
+    </div>
+    <div class="container1 left">
+      <div class="content">
+        <h2>78</h2>
+        <p>Licence - Université de Lorraine</p>
+      </div>
+    </div>
+    <div class="container1 right">
+      <div class="content">
+        <h2>910</h2>
+        <p>Baccalauréat Littéraire</p>
+      </div>
+    </div>
+  </div>
+  </div>
 
 
     <!-- Typed JS for text-effect -->
