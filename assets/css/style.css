@@ -8,7 +8,7 @@
 
 body {
     overflow-x: hidden;
-    background-color: #FAA0A0;
+    background-color: #f0b7b7;
 }
 
 p {
@@ -203,6 +203,17 @@ nav .navlinks li a {
 }
 
 /*/____________________________ Timeline CSS ____________________________*/
+
+.timeline .container1 .content h5:last-of-type {
+ margin-bottom: 8px;
+ font-style: italic;
+ font-weight: 300;
+}
+.timeline .container1 .content h5:first-of-type {
+  font-weight: 600;
+  font-size: 16px;
+ }
+
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
