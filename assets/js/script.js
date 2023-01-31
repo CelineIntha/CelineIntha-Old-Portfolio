@@ -24,3 +24,12 @@ document.getElementById("left-button")
   document.getElementById("timeline-education").hidden = true;
   document.getElementById("timeline-career").hidden = false;
 }, false);
+
+function showNav() {
+  var x = document.getElementById("ulshow");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
