@@ -5,4 +5,8 @@
   $to  = htmlspecialchars($_POST['to']);
 
   echo  $say, ' ', $to;
+<<<<<<< HEAD
 ?>
+=======
+?>
+>>>>>>> 0b546e9 (Push du dossier original)
