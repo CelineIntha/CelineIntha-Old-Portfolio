@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/button.css">
+    <link rel="stylesheet" href="/assets/css/mywork.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Portfolio</title>
+    <title>Céline Inthaaphay</title>
 </head>
 <body>
     <div class="hero-header">
@@ -21,14 +22,14 @@
                     <div class="logo-text">Céline Inthaaphay</div>
                 </div>
                 <nav>
-                    <div class="togglebtn">
+                    <div class="togglebtn" onclick="showNav();">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                    <ul class="navlinks">
+                    <ul class="navlinks" id="ulshow">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#boutonbox">Resume</a></li>
+                    <li><a href="#form-timeline">Resume</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact</a></li>
@@ -68,13 +69,16 @@
           </div>
     </div>
 
-<!--Switch Button-->    
-<div class="form-box" id="boutonbox">
+<!--Switch Button-->
+
+<div class="form-box" id="form-timeline">
   <div class="bouton-box">
     <div id="bouton"></div>
     <button type="button" class="toggle-bouton" id="left-button" onclick="leftClick();">Career</button>
     <button type="button" class="toggle-bouton" id="right-button" onclick="rightClick()">Education</button>
   </div>
+</div>
+
 
 <!-- Timeline for the career-->
 <div class="timeline" id="timeline-career">
@@ -129,7 +133,7 @@
     </div>
   </div>
 </div>
-</div>
+
 
 <!-- Timeline for education-->
   <div hidden class="timeline hide" id="timeline-education">
@@ -175,8 +179,41 @@
       </div>
     </div>
   </div>
-</div>
 
+<!--My work-->
+
+<div class="feat bg-gray pt-5 pb-5">
+  <div class="container2">
+    <div class="row">
+      <div class="section-head col-sm-12">
+        <h4><span>My</span> Work</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the
+          industry's<br>standard dummy text ever since the 1500s, when an unknown book.</p>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-globe"></i></span>
+          <h6>Modern Design</h6>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="item"> <span class="icon feature_box_col_two"><i class="fa fa-anchor"></i></span>
+          <h6>Creative Design</h6>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="item"> <span class="icon feature_box_col_three"><i class="fa fa-hourglass-half"></i></span>
+          <h6>Your Photoshoping</h6>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
     <!-- Typed JS for text-effect -->

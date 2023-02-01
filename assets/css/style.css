@@ -224,6 +224,7 @@ nav .navlinks li a {
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -452,6 +453,10 @@ nav .navlinks li a {
         margin-top: 20px;
         display: flex;
         justify-content: center;
+    }
+
+    .content {
+      font-size: 14px;
     }
 }
 
