@@ -209,7 +209,7 @@ nav .navlinks li a {
     transform: rotate(360deg);
 }
 
-button {
+.top-button {
   border: 1px solid #333;
   border-radius: 50%;
   background-color: #333;
