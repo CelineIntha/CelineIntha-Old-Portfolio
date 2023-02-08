@@ -42,7 +42,6 @@ header {
     flex-wrap: wrap;
 }
 
-
 .logo {
     display: inline-flex;
     justify-content: center;
@@ -78,7 +77,7 @@ nav .togglebtn {
     right: 3%;
     z-index: 5;
     cursor: pointer;
-    display: none;
+    display: none; 
 }
 
 nav .togglebtn span {
@@ -208,6 +207,20 @@ nav .navlinks li a {
 .hero-text .social i:hover {
     color: #FAA0A0;
     transform: rotate(360deg);
+}
+
+button {
+  border: 1px solid #333;
+  border-radius: 50%;
+  background-color: #333;
+  color: #f0b7b7;
+  display: none;
+  position: fixed;
+  top: 90%;
+  right: 5%;
+  z-index: 5;
+  cursor: pointer;
+  padding: 10px 15px 10px 15px;
 }
 
 /*/____________________________ Timeline CSS ____________________________*/
