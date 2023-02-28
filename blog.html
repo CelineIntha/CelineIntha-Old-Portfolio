@@ -1,15 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/button.css">
     <link rel="stylesheet" href="../assets/css/mywork.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <title>Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Céline Inthaaphay</title>
 </head>
+
 <body>
-    En construction
+    <button onclick="topFunction()" id="ButtonTop" title="Go to top" class="top-button bounce"><i
+            class="fa-solid fa-arrow-up fa-3x"></i></button>
+
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-c"></i>
+                    <div class="logo-text">Céline Inthaaphay</div>
+                </div>
+                <nav>
+                    <div class="togglebtn" onclick="showNav();">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks" id="ulshow">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/index.html#form-timeline">Resume</a></li>
+                        <li><a href="/index.html#my-work">My work</a></li>
+                        <li><a href="/blog.html">Blog</a></li>
+                        <li><a href="mailto:inthaaphay.celine@gmail.com">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <h1 class="text-white">En construction</h1>
+    </div>
+
+    <script>
+        /* Creating button click show hide bar */
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links = document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function () {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+    </script>
+      <script src="../assets/js/script.js"></script>
 </body>
+
 </html>
