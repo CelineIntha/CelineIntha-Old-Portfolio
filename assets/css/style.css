@@ -294,7 +294,7 @@ nav .navlinks li a {
   display: flex;
   justify-content: flex-end;
   position: relative;
-  top: -50px;
+  top: -46px;
 }
 
 .hero-text .social i {
@@ -650,6 +650,9 @@ nav .navlinks li a {
   .dropdown-content {
     left: 20px;
   }
+  .social {
+  top: -10px;
+  }
 }
 
 /*
@@ -722,11 +725,6 @@ nav .navlinks li a {
   .btn-group .btn {
     margin-top: 0;
     margin-right: 7px;
-  }
-
-  .social {
-    display: flex;
-    justify-content: flex-end;
   }
 
   .button {
