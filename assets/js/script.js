@@ -1,56 +1,54 @@
-// Faire réapparaître la timeline education lors du click
-let timelineEducation = document.getElementById('timeline-education');
+const leftButton = document.getElementById('leftButton');
+const rightButton = document.getElementById('rightButton');
+const bouton = document.getElementById('bouton');
+const timelineEducation = document.getElementById("timeline-education");
+const timelineCareer = document.getElementById("timeline-career");
 
-// Pour les 2 boutons
-var btn = document.getElementById('bouton')
+leftButton.addEventListener("click", leftClick);
 
 function leftClick() {
-    btn.style.left = '0'
+  bouton.style.left = '0';
+  // console.log('click gauche')
 }
+
+leftButton.addEventListener("click", function () {
+  timelineEducation.hidden = true;
+  timelineCareer.hidden = false;
+});
+
+rightButton.addEventListener("click", rightClick);
 
 function rightClick() {
-    btn.style.left = '50%'
-    timelineEducation.removeAttribute("hidden");
+  // console.log('click droit')
+  bouton.style.left = '50%';
+  timelineEducation.removeAttribute("hidden")
 }
 
-document.getElementById("right-button")
-        .addEventListener("click", function() {
-  document.getElementById("timeline-career").hidden = true;
-  document.getElementById("timeline-education").hidden = false;
-}, false);
+rightButton.addEventListener("click", function () {
+  timelineCareer.hidden = true;
+  timelineEducation.hidden = false;
+});
 
-document.getElementById("left-button")
-        .addEventListener("click", function() {
-  document.getElementById("timeline-education").hidden = true;
-  document.getElementById("timeline-career").hidden = false;
-}, false);
-
-function showNav() {
-  var x = document.getElementById("ulshow");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-
+// Marche plus à voir
 
 // Pour le bouton scroll to top
-let mybutton = document.getElementById("ButtonTop");
+let buttonTop = document.getElementById("buttonTop");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-    mybutton.style.display = "block";
+    buttonTop.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    buttonTop.style.display = "none";
   }
 }
 
+buttonTop.addEventListener("click", topFunction)
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+

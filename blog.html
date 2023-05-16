@@ -18,29 +18,48 @@
 </head>
 
 <body>
-    <button onclick="topFunction()" id="ButtonTop" title="Go to top" class="top-button bounce"><i
+    <button id="ButtonTop" title="Go to top" class="top-button bounce"><i
             class="fa-solid fa-arrow-up fa-3x"></i></button>
 
     <div class="hero-header">
         <div class="wrapper">
             <header>
                 <div class="logo">
-                    <i class="fa-solid fa-c"></i>
+                    <a href="index.html"><i class="fa-solid fa-c"></i></a>
                     <div class="logo-text">Céline Inthaaphay</div>
                 </div>
                 <nav>
-                    <div class="togglebtn" onclick="showNav();">
+                    <div class="togglebtn" id="navbtn">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
                     <ul class="navlinks" id="ulshow">
-                        <li><a href="/index.html">Home</a></li>
-                        <li><a href="/index.html#form-timeline">Resume</a></li>
-                        <li><a href="/index.html#my-work">My work</a></li>
-                        <li><a href="/blog.html">Blog</a></li>
+                        <li><a href="/index.html">Accueil</a></li>
+                        <li><a href="/index.html">CV</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="/index.html"><button class="dropbtn">Mes projets <i
+                                            class="fa-solid fa-sort-down"></i></button></a>
+                                <div class="dropdown-content">
+                                    <a href="/htmlCss.html">Front</a>
+                                    <a href="/JavaScript.html">Back</a>
+                                    <a href="/myProjects.html">Design</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!--<li><a href="/blog.html">Blog</a></li>-->
                         <li><a href="mailto:inthaaphay.celine@gmail.com">Contact</a></li>
-                    </ul>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">Langage <i
+                                        class="fa-solid fa-sort-down second-arrow"></i></button>
+                                <div class="dropdown-content lng">
+                                    <a href="#" id="eng">ENG</a>
+                                    <a href="#" id="fr">FR</a>
+                                </div>
+                            </div>
+                        </li>
                 </nav>
             </header>
         </div>
@@ -58,7 +77,8 @@
             nav.classList.toggle("open");
         })
     </script>
-      <script src="../assets/js/script.js"></script>
+    <script src="/assets/js/changelanguage.js"></script>
+    <script src="/assets/js/responsiveMenu.js"></script>
 </body>
 
 </html>
