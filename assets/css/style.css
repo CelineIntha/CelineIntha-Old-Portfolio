@@ -71,6 +71,7 @@ body {
 
 .dropdown-content a:hover {
   background-color: #f0b7b7;
+  color:#333;
 }
 
 .dropdown:hover .dropdown-content {
@@ -652,6 +653,9 @@ nav .navlinks li a {
   }
   .social {
   top: -10px;
+  }
+  .logo {
+    margin-top: 17px;
   }
 }
 
