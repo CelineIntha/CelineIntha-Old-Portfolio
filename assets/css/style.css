@@ -391,6 +391,8 @@ nav .navlinks li a {
   left: 50%;
 }
 
+
+
 /* Add arrows to the left container (pointing right) */
 .left::before {
   content: " ";
@@ -557,9 +559,75 @@ nav .navlinks li a {
   animation: bounce 2s infinite;
 }
 
+.logoBanhBao {
+  width: 180px; 
+  height: 100px; 
+  float: right; 
+  position: relative; 
+  left: 50px;
+}
+
+.logoTransforma {
+  width: 110px; 
+  height: 110px;
+  float: right;
+}
+
+.logoBatsam {
+  width: 80px; 
+  height: 80px;
+  float: right;
+}
+
+.logoMNS {
+  width: 110px; 
+  height: 60px;
+}
+
+.logoUnivLorraine {
+  width: 170px; 
+  height: 170px;
+}
+
+.logoSaintDo {
+  width: 90px; 
+  height: 100px;
+}
+
 /* Responsive & displaying navbar for small screen */
 
 @media only screen and (max-width: 600px) {
+  .logoBanhBao {
+    width: 154px; 
+    height: 90px; 
+    left: -42px;
+  }
+  .logoTransforma {
+    width: 80px; 
+    height: 80px;
+  }
+    .logoBatsam {
+    width: 70px; 
+    height: 70px;
+    float: right;
+  }
+  .logoMNS {
+    width: 100px; 
+    height: 50px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .logoSaintDo {
+    width: 70px; 
+    height: 64px;
+  }
+
+  .logoUnivLorraine {
+    width: 140px; 
+    height: 140px;
+  }
+
   nav .togglebtn {
     display: inherit;
   }
