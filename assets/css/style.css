@@ -110,7 +110,7 @@ p:last-of-type {
 
 .text-white {
   color: white;
-  padding-bottom: 3%;
+
 }
 
 .hero-header {
@@ -477,6 +477,28 @@ nav .navlinks li a {
   cursor: pointer;
 }
 
+.techno-used{
+  margin-bottom: 3%;
+}
+
+.appTitle{
+  font-weight: 500;
+}
+
+.techno-used li{
+ margin-left: 1%;
+ list-style-type: none;
+}
+
+.techno {
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 0.5%;
+}
+
+.description-project{
+  margin-bottom: 2%;
+}
 /*
 
 The following rule will only run if the browser supports CSS grid.
