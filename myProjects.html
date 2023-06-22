@@ -21,11 +21,11 @@
     <title>Céline Inthaaphay</title>
 </head>
 
-<body>
+<body class="body-projects">
     <button id="ButtonTop" title="Go to top" class="top-button bounce"><i
             class="fa-solid fa-arrow-up fa-3x"></i></button>
 
-    <div class="hero-header">
+    <div class="container-projects">
         <div class="wrapper">
             <header>
                 <div class="logo">
@@ -66,24 +66,82 @@
                         </li>
                 </nav>
             </header>
-        </div>
-        <h2 class="text-white">Applications web de messagerie</h2>
+            <h2 class="text-pink">Applications web de messagerie</h2>
         <p class="text-white">Dans le cadre de mes études, je suis actuellement en train de travailler sur la conception
-            d'une application de messagerie Web. Du wireframe, de la base de données, à la conception de l’application.
+            d'une application de messagerie Web. Du wireframe, de la base de données, à la conception de l’application. C'est un projet sans utilisation de frameworks.
         </p>
+
+        <h4 class="text-pink">Technologies utilisées :</h4>
+
+        <ul class="text-white">
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>SQL</li>
+            <li>Requêtes JSON</li>
+            <li>JMerise (Création du MCD)</li>
+            <li>Déploiement du serveur sur OVH</li>
+            <li>NGINX</li>
+            <li>Protection des injections SQL</li>
+            <li>Protection des failles XSS</li>
+        </ul>
+
+        <div class="gallery">
+
+            <div class="gallery-alertmns">
+                <img class="gallery-image" src="/assets/images/AlertMNS/login.png"
+                    alt="Application de messagerie AlertMNS - Page de login">
+            </div>
+
+            <div class="gallery-alertmns">
+                <img class="gallery-image" src="/assets/images/AlertMNS/dashboard.png"
+                    alt="Application de messagerie AlertMNS - Page de la dashboard">
+            </div>
+
+            <div class="gallery-alertmns">
+                <img class="gallery-image" src="/assets/images/AlertMNS/message.png"
+                    alt="Application de messagerie AlertMNS - Page des messages">
+            </div>
+
+            <div class="gallery-alertmns">
+                <img class="gallery-image" src="/assets/images/AlertMNS/chaine.png"
+                    alt="Application de messagerie AlertMNS - Page des chaînes">
+            </div>
+
+            <div class="gallery-alertmns">
+                <img class="gallery-image" src="/assets/images/AlertMNS/createReunion.png"
+                    alt="Application de messagerie AlertMNS - Page de création des réunions">
+            </div>
+
+
+            <div class="gallery-alertmns">
+                <img class="gallery-image" src="/assets/images/AlertMNS/newGroupBispng.png"
+                    alt="Application de messagerie AlertMNS - Création d'un groupe">
+            </div>
+
+            <div class="gallery-alertmns">
+                <img class="gallery-image" src="/assets/images/AlertMNS/newGroup.png"
+                    alt="Application de messagerie AlertMNS - Création d'un groupe">
+            </div>
+
+            <div class="gallery-alertmns">
+                <img class="gallery-image" src="/assets/images/AlertMNS/reunions.png"
+                    alt="Application de messagerie AlertMNS - Page des réunions">
+            </div>
+
+            <div class="gallery-alertmns">
+                <img class="gallery-image" src="/assets/images/AlertMNS/reunionsPrevues.png"
+                    alt="Application de messagerie AlertMNS - Page des réunions">
+            </div>
+
+
+            <div class="gallery-alertmns">
+                <img class="gallery-image" src="/assets/images/AlertMNS/logout.png"
+                    alt="Application de messagerie AlertMNS - Page de déconnexion">
+            </div>
+        </div>
+        </div>
     </div>
 
-    <script>
-        /* Creating button click show hide bar */
-        var togglebtn = document.querySelector(".togglebtn");
-        var nav = document.querySelector(".navlinks");
-        var links = document.querySelector(".navlinks li");
-
-        togglebtn.addEventListener("click", function () {
-            this.classList.toggle("click");
-            nav.classList.toggle("open");
-        })
-    </script>
     <script src="/assets/js/changelanguage.js"></script>
     <script src="/assets/js/responsiveMenu.js"></script>
 </body>
