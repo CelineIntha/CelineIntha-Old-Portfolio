@@ -810,7 +810,7 @@ The following rule will only run if the browser supports CSS grid.
     margin-top: 17px;
   }
   .container-projects{
-    margin-left: -3%;
+    margin-left: -5%;
   }
 }
 
