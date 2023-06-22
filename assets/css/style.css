@@ -474,6 +474,7 @@ nav .navlinks li a {
 
 .gallery-image:hover {
   transform: scale(1.15);
+  cursor: pointer;
 }
 
 /*
@@ -485,7 +486,7 @@ The following rule will only run if the browser supports CSS grid.
 @supports (display: grid) {
   .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 2fr));
     grid-gap: 2rem;
   }
 
