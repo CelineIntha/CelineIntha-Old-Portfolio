@@ -1,4 +1,4 @@
-# CelineIntha.github.io
+<h3 align="center">A passionate developer from France</h3>
 
 Hi ! I'm a student from Metz Numeric School. I'm preparing a professional certification on Computer Science.
 
