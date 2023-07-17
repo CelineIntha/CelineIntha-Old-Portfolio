@@ -144,6 +144,24 @@ a:hover {
 	color: #2f2f2f;
 }
 
+.section {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-bottom: #FAA0A0 0.2px solid;
+	padding: 2%;
+}
+
+.section img {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1%;
+}
+
+.section ul li {
+	text-decoration: none !important;
+}
+
 @media only screen and (max-width: 600px) {
 	.item {
 		width: 100%;
